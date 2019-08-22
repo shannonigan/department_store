@@ -1,0 +1,10 @@
+<h1><%= @items.name %></h1>
+<h3><%= @items.price %></h3>
+
+<hr />
+
+
+<%= link_to 'New Item', new_department_item_path %>
+<%= link_to 'Edit Item', edit_department_item_path(@department) %>
+<%= link_to 'Delete Item', department_item_path, method: :delete %>
+<%= link_to 'Back To Main', departments_path %>

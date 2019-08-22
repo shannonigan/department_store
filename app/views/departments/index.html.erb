@@ -1,0 +1,10 @@
+<h1> Choose A Department </h1>
+
+<%= link_to "Create a New Department", new_department_path %>
+
+<%= @department.length === 0 ? "No Departments Added" : "" %>
+<ul>
+  <% @department.each do |department| %>
+    <li> <%= link_to department.name, department_path(department) %> </li>
+    <% end %>
+
